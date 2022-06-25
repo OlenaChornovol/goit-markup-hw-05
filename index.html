@@ -62,7 +62,9 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="button">Заказать услугу</button>
+          <button type="button" class="button" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
 
@@ -110,14 +112,25 @@
               <a href="#" class="we-do-link">
                 <div class="we-do-box">
                   <img src="images/box1.jpg" alt="Верстка" />
+                  <h3>Десктопные приложения</h3>
                 </div>
               </a>
             </li>
             <li class="we-do-item">
-              <a href="#"><img src="images/box2.jpg" alt="Адаптив" /> </a>
+              <a href="#" class="we-do-link">
+                <div class="we-do-box">
+                  <img src="images/box2.jpg" alt="Адаптив" />
+                  <h3>Мобильные приложения</h3>
+                </div>
+              </a>
             </li>
             <li class="we-do-item">
-              <a href="#"><img src="images/box3.jpg" alt="Дизайн" /> </a>
+              <a href="#" class="we-do-link">
+                <div class="we-do-box">
+                  <img src="images/box3.jpg" alt="Дизайн" />
+                  <h3>Дизайнерские решения</h3>
+                </div>
+              </a>
             </li>
           </ul>
         </div>
@@ -381,5 +394,13 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close" data-modal-close>
+          <img src="./images/X.svg" alt="x" />
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
